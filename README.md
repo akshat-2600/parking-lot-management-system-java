@@ -1,26 +1,24 @@
----
+ # 🅿 Parking Lot Management System
 
-🅿 Parking Lot Management System
-
-A Java-based console application for efficient parking space allocation, ticketing, billing, and real-time monitoring.
+### A Java-based console application for efficient parking space allocation, ticketing, billing, and real-time monitoring.
 
 
 ---
 
-📌 Overview
+## 📌 Overview
 
 This project is a console-based Parking Lot Management System developed using Core Java and Object-Oriented Programming principles.
 It automates the processes of:
 
-Parking spot allocation
+- Parking spot allocation
 
-Ticket generation
+- Ticket generation
 
-Vehicle exit & billing
+- Vehicle exit & billing
 
-Tracking available and occupied spots
+- Tracking available and occupied spots
 
-Maintaining ticket history and revenue logs
+- Maintaining ticket history and revenue logs
 
 
 The system ensures accuracy, efficiency, and maintainability, making it suitable for real-world small to medium parking facilities.
@@ -28,74 +26,74 @@ The system ensures accuracy, efficiency, and maintainability, making it suitable
 
 ---
 
-🎯 Features
+## 🎯 Features
 
-✔ Vehicle Entry
+### ✔ Vehicle Entry
 
-Enter vehicle number & type (CAR/BIKE/TRUCK)
+- Enter vehicle number & type (CAR/BIKE/TRUCK)
 
-Automatically assigns the nearest available spot
+- Automatically assigns the nearest available spot
 
-Generates a timestamped parking ticket
-
-
-✔ Vehicle Exit
-
-Validate ticket
-
-Calculate duration of stay
-
-Generate total bill
-
-Free up the occupied spot
+- Generates a timestamped parking ticket
 
 
-✔ Real-Time Monitoring
+### ✔ Vehicle Exit
 
-View available parking spots
+- Validate ticket
 
-View occupied spots
+- Calculate duration of stay
 
-Search vehicle by number
+- Generate total bill
 
-View active tickets
-
-
-✔ Ticket & Revenue Management
-
-Ticket history (active + closed)
-
-Daily revenue calculation
-
-Basic reporting
+- Free up the occupied spot
 
 
-✔ Error Handling
+### ✔ Real-Time Monitoring
 
-Invalid ticket ID
+- View available parking spots
 
-No spot available
+- View occupied spots
 
-Invalid vehicle type
+- Search vehicle by number
 
-Prevent duplicate exits
+- View active tickets
 
 
-✔ Clean Object-Oriented Structure
+### ✔ Ticket & Revenue Management
 
-Modular classes
+- Ticket history (active + closed)
 
-Well-designed models & services
+- Daily revenue calculation
 
-Single responsibility principle
+- Basic reporting
+
+
+### ✔ Error Handling
+
+- Invalid ticket ID
+
+- No spot available
+
+- Invalid vehicle type
+
+- Prevent duplicate exits
+
+
+### ✔ Clean Object-Oriented Structure
+
+- Modular classes
+
+- Well-designed models & services
+
+- Single responsibility principle
 
 
 
 ---
 
-🏗 System Architecture
+## 🏗 System Architecture
 
-┌─────────────────────────┐
+ ┌─────────────────────────┐
  │     Console UI (Main)   │
  └─────────────┬───────────┘
                │
@@ -115,104 +113,145 @@ Single responsibility principle
 
 ---
 
-🧱 Technologies Used
+## 🧱 Technologies Used
 
-Java (OOP + Collections Framework)
+- Java (OOP + Collections Framework)
 
-Java Time API
+- Java Time API
 
-Exception Handling
+- Exception Handling
 
-UML & Documentation
+- UML & Documentation
 
-Git & GitHub
+- Git & GitHub
 
 
 
 ---
 
-📂 Project Structure
+## 📂 Project Structure
 
 parking-lot-management-system/
+
 │
+
 ├── src/
+
 │   ├── Main.java
+
 │   ├── ParkingLotManager.java
+
 │   ├── ParkingSpot.java
+
 │   ├── Vehicle.java
+
 │   ├── Ticket.java
+
 │   ├── BillingService.java
+
 │   ├── ConsoleUtils.java
+
 │   ├── exceptions/
+
 │   │      ├── NoSpotAvailableException.java
+
 │   │      ├── InvalidTicketException.java
+
 │   │      └── PaymentFailedException.java
+
 │   └── utils/
+
 │          └── DateUtils.java
+
 │
+
 ├── diagrams/
+
 │   ├── usecase.png
+
 │   ├── classdiagram.png
+
 │   ├── workflow-entry.png
+
 │   ├── workflow-exit.png
+
 │   └── architecture.png
+
 │
+
 ├── README.md
+
 ├── statement.md
+
 ├── test-cases.pdf
+
 └── project-report.pdf
 
 
 ---
 
-🚀 How to Run the Project
+## 🚀 How to Run the Project
 
-✔ Requirements
+### ✔ Requirements
 
-Java JDK 8+
+- Java JDK 8+
 
-Any IDE (IntelliJ / VS Code / Eclipse)
+- Any IDE (IntelliJ / VS Code / Eclipse)
 
-Terminal or Command Prompt
+- Terminal or Command Prompt
 
 
 
 ---
 
-🏁 Steps to Run
+## 🏁 Steps to Run
 
-1. Clone the repository
+- 1. Clone the repository
+ 
+```bash
 
 git clone https://github.com/<your-github-username>/parking-lot-management-system.git
 
-2. Navigate to project directory
+```
+
+- 2. Navigate to project directory
+
+```bash
 
 cd parking-lot-management-system
 
-3. Compile the code
+```
+
+- 3. Compile the code
+
+ ```bash
 
 javac src/*.java
 
-4. Run the application
+```
+
+- 4. Run the application
+
+```bash
 
 java src/Main
 
+```
 
 ---
 
-🖥 Application Menu (Sample)
+## 🖥 Application Menu (Sample)
 
 ========================================
       PARKING LOT MANAGEMENT SYSTEM     
 ========================================
 
 1. Park Vehicle
-2. Vehicle Exit
-3. View Available Spots
-4. View Occupied Spots
-5. Search Vehicle
-6. View Daily Revenue
-7. Exit
+2. Exit Vehicle 
+3. Show Available Spots
+4. Search Vehicle (Active)
+5. Show Parking Lot Revenue
+6. Exit System
 
 ----------------------------------------
 Enter your choice:
@@ -220,169 +259,147 @@ Enter your choice:
 
 ---
 
-🛠 Functional Modules
+## 🛠 Functional Modules
 
-1️⃣ ParkingLotManager
+### 1️⃣ ParkingLotManager
 
-Core management class
+- Core management class
 
-Handles parking, exiting, searching, tracking
-
-
-2️⃣ BillingService
-
-Calculates duration
-
-Generates bill & revenue summary
+- Handles parking, exiting, searching, tracking
 
 
-3️⃣ Models
+### 2️⃣ BillingService
 
-Vehicle
+- Calculates duration
 
-Ticket
-
-ParkingSpot
+- Generates bill & revenue summary
 
 
-4️⃣ Utils
+### 3️⃣ Models
 
-Date formatting
+- Vehicle
 
-Printing helpers
+- Ticket
+
+- ParkingSpot
+
+
+### 4️⃣ Utils
+
+- Date formatting
+
+- Printing helpers
 
 
 
 ---
 
-🧪 Testing
+## 🧪 Testing
 
-✔ Manual Test Cases
+### ✔ Manual Test Cases
 
 At least 20+ test cases, including:
 
-Vehicle entry scenarios
+- Vehicle entry scenarios
 
-Exit and billing validation
+- Exit and billing validation
 
-Invalid ticket handling
+- Invalid ticket handling
 
-No spot available situations
+- No spot available situations
 
-Search functionality
+- Search functionality
 
-Duration calculation correctness
-
-
-(All test cases are included in test-cases.pdf.)
+- Duration calculation correctness
 
 
 ---
 
-📊 Reporting & Output
+## 📊 Reporting & Output
 
-Console-based reports:
+### Console-based reports:
 
-Total revenue
+- Total revenue
 
-Ticket history
+- Ticket history
 
-Active tickets
+- Active tickets
 
-Spot occupancy
+- Spot occupancy
 
-
-Screenshot examples included in project-report and README (optional)
 
 
 
 ---
 
-📄 Documentation
+## 📄 Documentation
 
-This repository includes:
+### This repository includes:
 
-✔ README.md
+- ✔ README.md
 
-Complete project explanation.
+- Complete project explanation.
 
-✔ statement.md
+- ✔ statement.md
 
-Problem statement
+- Problem statement
 
-Project scope
+- Project scope
 
-Target users
+- Target users
 
-High-level features
+- High-level features
 
+- ✔ project-report.pdf
 
-✔ project-report.pdf
+- Full academic project documentation (10–15 pages).
 
-Full academic project documentation (10–15 pages).
+- ✔ diagrams
 
-✔ test-cases.pdf
-
-Manual testing sheet with expected results.
-
-✔ diagrams
-
-UML + Architecture diagrams.
+- UML + Architecture diagrams.
 
 
 ---
 
-🔮 Future Enhancements (Optional)
+## 🔮 Future Enhancements (Optional)
 
-GUI dashboard using JavaFX
+- GUI dashboard using JavaFX
 
-Real-time parking lot heatmap
+- Real-time parking lot heatmap
 
-Database integration (MySQL)
+- Database integration (MySQL)
 
-REST API using Spring Boot
+- REST API using Spring Boot
 
-Admin login system
+- Admin login system
 
-Dynamic pricing (peak hours)
+- Dynamic pricing (peak hours)
 
 
 
 ---
 
-🧑‍💻 Author
+## 🧑‍💻 Author
 
-Akshat Saxena
-Java Developer | VIT Bhopal University
-GitHub: akshat-2600
-
-
----
-
-⭐ Conclusion
-
-This Parking Lot Management System demonstrates complete command over:
-
-Java OOP
-
-Exception Handling
-
-Modular design
-
-Real-time problem solving
-
-Documentation & software engineering practices
-
-
-It is fully functional, maintainable, and aligned with academic standards.
+### Akshat Saxena
+### Java Developer | VIT Bhopal University
+### GitHub: akshat-2600
 
 
 ---
 
-If you want, I can now create:
-✔ statement.md
-✔ Project Report (PDF-ready)
-✔ Test Cases Document
-✔ UML Diagrams Content (you can convert to images)
+## ⭐ Conclusion
 
-Just tell me!
+## This Parking Lot Management System demonstrates complete command over:
+
+- Java OOP
+
+- Exception Handling
+
+- Modular design
+
+- Real-time problem solving
+
+- Documentation & software engineering practices
+
+  
