@@ -91,43 +91,6 @@ The system ensures accuracy, efficiency, and maintainability, making it suitable
 
 ---
 
-## 🏗 System Architecture
-
- ┌─────────────────────────┐
- 
- │     Console UI (Main)   │
- 
- └─────────────┬───────────┘
- 
-               │
-               
- ┌─────────────▼─────────────┐
- 
- │     Service Layer         │
- 
- │  - ParkingLotManager      │
- 
- │  - BillingService         │
- 
- └─────────────┬─────────────┘
- 
-               │
-               
- ┌─────────────▼─────────────┐
- 
- │        Data Layer         │
- 
- │  - ParkingSpot List       │
- 
- │  - Active Tickets         │
- 
- │  - Ticket History         │
- 
- └───────────────────────────┘
-
-
----
-
 ## 🧱 Technologies Used
 
 - Java (OOP + Collections Framework)
@@ -231,35 +194,35 @@ parking-lot-management-system/
 
 ## 🏁 Steps to Run
 
-- 1. Clone the repository
+1. Clone the repository
  
 ```bash
 
-git clone https://github.com/<your-github-username>/parking-lot-management-system.git
+     git clone https://github.com/<your-github-username>/parking-lot-management-system.git
 
 ```
 
-- 2. Navigate to project directory
+2. Navigate to project directory
 
 ```bash
 
-cd parking-lot-management-system
+     cd parking-lot-management-system
 
 ```
 
-- 3. Compile the code
+3. Compile the code
 
  ```bash
 
-javac src/*.java
+     javac src/*.java
 
 ```
 
-- 4. Run the application
+4. Run the application
 
 ```bash
 
-java src/Main
+     java src/Main
 
 ```
 
@@ -414,9 +377,3 @@ At least 20+ test cases, including:
 
 
 ---
-
-- Real-time problem solving
-
-- Documentation & software engineering practices
-
-  
