@@ -94,20 +94,35 @@ The system ensures accuracy, efficiency, and maintainability, making it suitable
 ## 🏗 System Architecture
 
  ┌─────────────────────────┐
+ 
  │     Console UI (Main)   │
+ 
  └─────────────┬───────────┘
+ 
                │
- ┌─────────────▼────────────┐
+               
+ ┌─────────────▼─────────────┐
+ 
  │     Service Layer         │
+ 
  │  - ParkingLotManager      │
+ 
  │  - BillingService         │
- └─────────────┬────────────┘
+ 
+ └─────────────┬─────────────┘
+ 
                │
- ┌─────────────▼────────────┐
+               
+ ┌─────────────▼─────────────┐
+ 
  │        Data Layer         │
+ 
  │  - ParkingSpot List       │
+ 
  │  - Active Tickets         │
+ 
  │  - Ticket History         │
+ 
  └───────────────────────────┘
 
 
@@ -135,33 +150,47 @@ parking-lot-management-system/
 
 │
 
-├── src/
+├── src/com/parkinglot
 
-│   ├── Main.java
+│   └── exceptions/
 
-│   ├── ParkingLotManager.java
-
-│   ├── ParkingSpot.java
-
-│   ├── Vehicle.java
-
-│   ├── Ticket.java
-
-│   ├── BillingService.java
-
-│   ├── ConsoleUtils.java
-
-│   ├── exceptions/
+│   │      ├── InvalidTicketException.java 
 
 │   │      ├── NoSpotAvailableException.java
 
-│   │      ├── InvalidTicketException.java
-
 │   │      └── PaymentFailedException.java
+
+│   └── models/
+
+│   │      ├── ParkingSpot.java
+
+│   │      ├── SpotType.java
+
+│   │      ├── TicketType.java
+
+│   │      └── Vehicle.java
+
+│   └── services/
+
+│   │      ├── BillingService.java
+
+│   │      ├── ParkingLotManager.java
+
+│   │      ├── PaymentService.java
+
+│   │      └── ReportGenerator.java
 
 │   └── utils/
 
-│          └── DateUtils.java
+│   │      ├── Config.java
+
+│   │      ├── ConsoleUtils.java
+
+│   │      ├── LoggerConfig.java
+
+│   │      └── TimeUtils.java
+
+│   ├── Main.java
 
 │
 
@@ -171,9 +200,7 @@ parking-lot-management-system/
 
 │   ├── classdiagram.png
 
-│   ├── workflow-entry.png
-
-│   ├── workflow-exit.png
+│   ├── workflow.png
 
 │   └── architecture.png
 
@@ -182,8 +209,6 @@ parking-lot-management-system/
 ├── README.md
 
 ├── statement.md
-
-├── test-cases.pdf
 
 └── project-report.pdf
 
@@ -243,7 +268,9 @@ java src/Main
 ## 🖥 Application Menu (Sample)
 
 ========================================
+
       PARKING LOT MANAGEMENT SYSTEM     
+      
 ========================================
 
 1. Park Vehicle
@@ -336,11 +363,11 @@ At least 20+ test cases, including:
 
 ### This repository includes:
 
-- ✔ README.md
+  ✔ README.md
 
 - Complete project explanation.
 
-- ✔ statement.md
+  ✔ statement.md
 
 - Problem statement
 
@@ -350,11 +377,11 @@ At least 20+ test cases, including:
 
 - High-level features
 
-- ✔ project-report.pdf
+  ✔ project-report.pdf
 
 - Full academic project documentation (10–15 pages).
 
-- ✔ diagrams
+  ✔ diagrams
 
 - UML + Architecture diagrams.
 
@@ -387,16 +414,6 @@ At least 20+ test cases, including:
 
 
 ---
-
-## ⭐ Conclusion
-
-## This Parking Lot Management System demonstrates complete command over:
-
-- Java OOP
-
-- Exception Handling
-
-- Modular design
 
 - Real-time problem solving
 
