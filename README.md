@@ -181,31 +181,31 @@ parking-lot-management-system/
 ## 📐 System Architecture
 
 <p align="center">
-  <img src="diagrams/System Architecture Diagram.png" width="700"/>
+  <img src="src\com\parkinglot\diagrams\System Architecture Diagram.png" width="700"/>
 </p>
 
 ## 🎭 Use Case Diagram
 
 <p align="center">
-  <img src="diagrams/UML USE CASE DIAGRAM.png" width="700"/>
+  <img src="src\com\parkinglot\diagrams\UML USE CASE DIAGRAM.png" width="700"/>
 </p>
 
 ## 🔄 Workflow Diagram
 
 <p align="center">
-  <img src="diagrams/Workflow Diagram.png" width="700"/>
+  <img src="src\com\parkinglot\diagrams\Workflow Diagram.png" width="700"/>
 </p>
 
 ## 🔁 Sequence Diagram
 
 <p align="center">
-  <img src="diagrams/UML Sequence Diagram.png" width="700"/>
+  <img src="src\com\parkinglot\diagrams\UML Sequence Diagram.png" width="700"/>
 </p>
 
 ## 🧱 Class Diagram
 
 <p align="center">
-  <img src="diagrams/UML Class Diagram.png" width="700"/>
+  <img src="src\com\parkinglot\diagrams\UML Class Diagram.png" width="700"/>
 </p>
 
 
