@@ -159,15 +159,15 @@ parking-lot-management-system/
 
 ├── diagrams/
 
-│   ├── usecase.png
+│   ├── System Architecture Diagram.png
 
-│   ├── classdiagram.png
+│   ├── UML Class Diagram.png
 
-│   ├── workflow.png
+│   ├── UML Sequence Diagram.png
 
-│   └── architecture.png
+│   ├── UML USE CASE DIAGRAM.png
 
-│
+│   └── Workflow Diagram.png
 
 ├── README.md
 
@@ -177,6 +177,40 @@ parking-lot-management-system/
 
 
 ---
+
+## 📐 System Architecture
+
+<p align="center">
+  <img src="diagrams/System Architecture Diagram.png" width="700"/>
+</p>
+
+## 🎭 Use Case Diagram
+
+<p align="center">
+  <img src="diagrams/UML USE CASE DIAGRAM.png" width="700"/>
+</p>
+
+## 🔄 Workflow Diagram
+
+<p align="center">
+  <img src="diagrams/Workflow Diagram.png" width="700"/>
+</p>
+
+## 🔁 Sequence Diagram
+
+<p align="center">
+  <img src="diagrams/UML Sequence Diagram.png" width="700"/>
+</p>
+
+## 🧱 Class Diagram
+
+<p align="center">
+  <img src="diagrams/UML Class Diagram.png" width="700"/>
+</p>
+
+
+---
+
 
 ## 🚀 How to Run the Project
 
