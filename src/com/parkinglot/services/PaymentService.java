@@ -1,3 +1,5 @@
+// Documentation
+
 package com.parkinglot.services;
 
 import com.parkinglot.exceptions.PaymentFailedException;

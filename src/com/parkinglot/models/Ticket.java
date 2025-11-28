@@ -1,3 +1,5 @@
+// Documentation
+
 package com.parkinglot.models;
 
 import java.time.LocalDateTime;
