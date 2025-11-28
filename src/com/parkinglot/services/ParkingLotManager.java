@@ -34,6 +34,9 @@ public class ParkingLotManager {
         spotsByType.get(spot.getSpotType()).add(spot);
     }
 
+
+    // implement ticket issuing functionality
+    
     public synchronized Ticket assignSpot(Vehicle vehicle) throws NoSpotAvailableException {
         List<ParkingSpot> list = spotsByType.get(vehicle.getVehicleType());
         Optional<ParkingSpot> opt = list.stream().filter(s -> !s.isOccupied()).sorted(Comparator.comparingInt(ParkingSpot::getSpotId)).findFirst();
