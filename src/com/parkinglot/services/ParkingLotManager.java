@@ -21,8 +21,8 @@ public class ParkingLotManager {
 
     private double totalRevenue = 0.0;
 
-    private final BillingService billingService;
-    private final PaymentService paymentService;
+    private final BillingService billingService;   // implementing billing servies
+    private final PaymentService paymentService;   // implementing payment servies
 
     public ParkingLotManager(BillingService billingService, PaymentService paymentService) {
         this.billingService = billingService;
